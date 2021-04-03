@@ -36,14 +36,14 @@ Grâce à ces information nous pouvons traduire les demandes du client en faisan
 
 ### Partie 2: Traduction du modèle UML au relationnel.
 
-A partir du diagramme UML nous allons déduire ci-dessous le modèle relationnel.
+A partir du diagramme UML nous allons déduire ci-dessous le modèle relationnel.<br/>
 
-Pour designer une clé primaire nous utiliserons une typographie bold et italique comme par exemple ci: **_userID_** \n
-**Clients**(**_numero_client_**, nom, prenom, adresse) \n
-**Commandes**(**_numero_commande_**, client, reference_article, adresse_livraison, date_achat, statut)
-**Articles**(**_reference_article_**, nom_article, fournisseur, prix)
-**Fournisseurs**(**_numero_fournisseur_**, marque)
-**Stoks**(**_reference_article_**, nombre_articles)
-**Entrepot**(**_reference_article_**, allée, numero_place)
+Pour designer une clé primaire nous utiliserons une typographie bold et italique comme par exemple ci: **_userID_** <br/>
+**Clients**(**_numero_client_**, nom, prenom, adresse) <br/>
+**Commandes**(**_numero_commande_**, client, reference_article, adresse_livraison, date_achat, statut) <br/>
+**Articles**(**_reference_article_**, nom_article, fournisseur, prix) <br/>
+**Fournisseurs**(**_numero_fournisseur_**, marque) <br/>
+**Stoks**(**_reference_article_**, nombre_articles) <br/>
+**Entrepot**(**_reference_article_**, allée, numero_place) <br/>
 
 
