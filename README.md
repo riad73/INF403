@@ -9,9 +9,9 @@
 
 **To do:**
 
-  - [x] Partie 1
-  - [ ] Partie 2(en cours)
-  - [ ] Partie 3
+  - [x] Partie I
+  - [ ] Partie II (en cours)
+  - [ ] Partie III
 
 ### Partie 1: Description du problème & modèle conceptuel.
 
@@ -38,7 +38,12 @@ Grâce à ces information nous pouvons traduire les demandes du client en faisan
 
 A partir du diagramme UML nous allons déduire ci-dessous le modèle relationnel.
 
-
-**Clients**(numero_client
+Pour designer une clé primaire nous utiliserons une typographie bold et italique comme par exemple ci: **_userID_**
+**Clients**(**_numero_client_**, nom, prenom, adresse)
+**Commandes**(**_numero_commande_**, client, reference_article, adresse_livraison, date_achat, statut)
+**Articles**(**_reference_article_**, nom_article, fournisseur, prix)
+**Fournisseurs**(**_numero_fournisseur_**, marque)
+**Stoks**(**_reference_article_**, nombre_articles)
+**Entrepot**(**_reference_article_**, allée, numero_place)
 
 
