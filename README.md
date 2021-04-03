@@ -1,5 +1,5 @@
 # Création d'une marketplace
-## Le but de ce projet et de pouvoir créer une base de donnée relationnelle.
+## Le but de ce projet est de pouvoir créer une base de donnée relationnelle.
 
 
 *Conception de notre diagramme UML*
