@@ -38,8 +38,8 @@ Grâce à ces information nous pouvons traduire les demandes du client en faisan
 
 A partir du diagramme UML nous allons déduire ci-dessous le modèle relationnel.
 
-Pour designer une clé primaire nous utiliserons une typographie bold et italique comme par exemple ci: **_userID_**
-**Clients**(**_numero_client_**, nom, prenom, adresse)
+Pour designer une clé primaire nous utiliserons une typographie bold et italique comme par exemple ci: **_userID_** \n
+**Clients**(**_numero_client_**, nom, prenom, adresse) \n
 **Commandes**(**_numero_commande_**, client, reference_article, adresse_livraison, date_achat, statut)
 **Articles**(**_reference_article_**, nom_article, fournisseur, prix)
 **Fournisseurs**(**_numero_fournisseur_**, marque)
