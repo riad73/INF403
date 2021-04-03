@@ -2,16 +2,16 @@
 ## Le but de ce projet est de pouvoir créer une base de donnée relationnelle.
 
 
+**Objectif**:
+  - Partie I : Description du problème & modèle conceptuel.
+  - Partie II : Traduction du modèle UML au relationnel.
+  - Partie III : Mettre en œuvre quelques fonctionnalitées simplifiées d’une application Python & SQLite
 
+### Partie 1: Description du problème & modèle conceptuel.
 
 Dans ce projet, nous souhaitons créer la base de donnée d'un marketplace pour notre client.
 Le principe d'une marketplace et de pouvoir mettre en relation client et vendeur sur une même application. 
 Voici les notions que le client souhaite que l'on mette en oeuvre:
-
-
-Objectif:
-  100. Partie I
-     - First nested list item
 
 
 **Les clients :** Les clients sont identifiés par un numéro unique, on représente aussi leur nom, prénom et date de naissance.
@@ -28,6 +28,7 @@ Grâce à ces information nous pouvons traduire les demandes du client en faisan
 
 ![image](https://user-images.githubusercontent.com/58702474/113482416-f4ef5000-949e-11eb-8df0-a290c7b0bb56.png)
 
+### Partie 2: Traduction du modèle UML au relationnel.
 
 A partir du diagramme UML nous allons déduire ci-dessous le modèle relationnel.
 
