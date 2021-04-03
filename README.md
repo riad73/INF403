@@ -9,9 +9,9 @@
 
 **To do:**
 
-  [x] Partie 1
-  [ ] Partie 2(en cours)
-  [ ] Partie 3
+  - [x] Partie 1
+  - [ ] Partie 2(en cours)
+  - [ ] Partie 3
 
 ### Partie 1: Description du problème & modèle conceptuel.
 
