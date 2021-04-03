@@ -54,3 +54,10 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 **Entrepot**(**_reference_article_**, allée, numero_place) <br/>
 
 
+
+Clients(numero_client) ⊆  Commandes(numero_client) <br/>
+Articles(reference_article) ⊆  Commandes(reference_article) <br/>
+Articles(reference_article) ⊆  Stocks(reference_article) <br/>
+Stocks(reference_article) ⊆  Entrepot(reference_article) <br/>
+Fournisseurs(numero_fournisseur) ⊆  Articles(numero_fournisseur) <br/>
+
