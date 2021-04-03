@@ -2,10 +2,16 @@
 ## Le but de ce projet est de pouvoir créer une base de donnée relationnelle.
 
 
-**Objectif**:
+**Objectif:**
   - Partie I : Description du problème & modèle conceptuel.
   - Partie II : Traduction du modèle UML au relationnel.
   - Partie III : Mettre en œuvre quelques fonctionnalitées simplifiées d’une application Python & SQLite
+
+**To do:**
+
+  [x] Partie 1
+  [ ] Partie 2(en cours)
+  [ ] Partie 3
 
 ### Partie 1: Description du problème & modèle conceptuel.
 
