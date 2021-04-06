@@ -23,7 +23,7 @@ Voici les notions que le client souhaite que l'on mette en oeuvre:
 **Les clients :** Les clients sont identifiés par un numéro unique, on représente aussi leur nom, prénom, adresse et date de naissance.
 
 
-**Les fournisseurs :** Les fournisseurs sont identifiés par un numéro et une marque ils mettent en avant sur l'application un ou plusieur articles de cette même marque. Les articles présent sur le site sont mis par le fournisseur en quantité limité et seront stockés dans l'entrepot de la société de la marketplace. Dans l'entrepot le stock d'articles se situent dans une allée qui est identifiable par une caractère et sont stockés à un numéro (qui réprésente la position) dans cette même allée.
+**Les fournisseurs :** Les fournisseurs sont identifiés par un numéro et une marque. Ils metteront en avant sur l'application un ou plusieur articles de cette même marque. Les articles présent sur le site sont mis par le fournisseur en quantité limité et seront stockés dans l'entrepot de la société de la marketplace. Dans l'entrepot le stock d'articles se situent dans une allée qui est identifiable par une caractère et sont stockés à un numéro (qui réprésente la position) dans cette même allée.
 
 
 **Les commandes**: Le dirigeant de la marketplace veut par la même occasion qu'une fois que le client séléctionne un seul et unique article, il passe commande tout de suite après. La commande sera donc identifiable par un numéro de commande et comportera, le nom du client, son adresse, la référence de l'article en question, la date d'achat ainsi que le statut de la commande (expédié, en transit ou livré).
