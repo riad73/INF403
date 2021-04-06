@@ -20,7 +20,7 @@ Le principe d'une marketplace et de pouvoir mettre en relation client et vendeur
 Voici les notions que le client souhaite que l'on mette en oeuvre:
 
 
-**Les clients :** Les clients sont identifiés par un numéro unique, on représente aussi leur nom, prénom et date de naissance.
+**Les clients :** Les clients sont identifiés par un numéro unique, on représente aussi leur nom, prénom, adresse et date de naissance.
 
 
 **Les fournisseurs :** Les fournisseurs sont identifiés par un numéro et une marque ils mettent en avant sur l'application un ou plusieur articles de cette même marque. Les articles présent sur le site sont mis par le fournisseur en quantité limité et seront stockés dans l'entrepot de la société de la marketplace. Dans l'entrepot le stock d'articles se situent dans une allée qui est identifiable par une caractère et sont stockés à un numéro (qui réprésente la position) dans cette même allée.
