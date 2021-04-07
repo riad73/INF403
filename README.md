@@ -24,7 +24,7 @@ Voici les notions que le client souhaite que l'on mette en oeuvre:
 
 **Les articles :** Les articles seront identifiable par un numéro qui correspond à la référence de cet article. Deplus, on affichera le nom de l'article, sa marque, le fournisseur, son prix et sa quantité (stock). Ces articles seront stockés dans l'entrepot de la boutique la boutique en ligne. Ils sont rangés dans une allée correspondant à un caractère type : "A", "B"... et seront positionnés à un endroit étiquetté par un numéro.
 
-**Les commandes**: Les commandes quant à elle sont identifiable par un numéro de commande et comportera, le nom du client, son adresse, la référence de l'article en question, la date d'achat ainsi que le statut de la commande (expédié, en transit ou livré).
+**Les commandes**: Les commandes quant à elle sont identifiable par un numéro de commande et comportera, le nom du client, son adresse, la référence de l'article en question, la date d'achat ainsi que le statut de la commande (expédié, en transit ou livré). Toutes les commandes seront alors stockés dans le panier de mes clients.
 
 
 *Conception de notre diagramme UML* <br/>
@@ -43,7 +43,9 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 
 **Clients**(**_numero_client_**, nom, prenom, adresse) <br/>
 
-**Commandes**(**_numero_commande_**, numero_client, reference_article, adresse_livraison, date_achat, statut) <br/>
+**Paniers**(numero_client, reference_article) <br/>
+
+**Commandes**(**_numero_commande_**, numero_client, adresse_livraison, date_achat, statut) <br/>
 
 **Articles**(**_reference_article_**, nom_article) <br/>
 
