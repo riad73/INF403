@@ -27,13 +27,13 @@ Voici les notions que le client souhaite que l'on mette en oeuvre:
 
 **Les articles :** Les articles seront identifiable par un numéro qui correspond à la référence de cet article. Deplus, on affichera le nom de l'article, sa marque, le fournisseur, son prix et sa quantité (stock).
 
-**Les commandes**: Le dirigeant de la marketplace veut par la même occasion qu'une fois que le client séléctionne un seul et unique article, il passe commande tout de suite après. La commande sera donc identifiable par un numéro de commande et comportera, le nom du client, son adresse, la référence de l'article en question, la date d'achat ainsi que le statut de la commande (expédié, en transit ou livré).
+**Les commandes**: Les commandes sont donc identifiable par un numéro de commande et comportera, le nom du client, son adresse, la référence de l'article en question, la date d'achat ainsi que le statut de la commande (expédié, en transit ou livré).
 
 
 *Conception de notre diagramme UML* <br/>
-Grâce à ces informations nous pouvons traduire les demandes du client en faisant notre conception du diagramme UML.
+Grâce aux informations ci-dessus nous pouvons traduire les demandes du client par un diagramme UML.
 
-![image](https://user-images.githubusercontent.com/58702474/113860839-c925e000-97a6-11eb-8c72-ab0a2954bb87.png)
+![image](https://user-images.githubusercontent.com/58702474/113861067-13a75c80-97a7-11eb-839a-dbb5a92922c1.png)
 
 
 
