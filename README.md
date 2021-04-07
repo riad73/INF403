@@ -43,21 +43,23 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 
 **Clients**(**_numero_client_**, nom, prenom, adresse) <br/>
 
-**Commandes**(**_numero_commande_**, num_client, reference_article, adresse_livraison, date_achat, statut) <br/>
+**Commandes**(**_numero_commande_**, numero_client, reference_article, adresse_livraison, date_achat, statut) <br/>
 
-**Articles**(**_reference_article_**, nom_article, numero_fournisseur, prix, nombre_articles) <br/>
+**Articles**(**_reference_article_**, nom_article) <br/>
 
-**Vendeurs**(**_numero_fournisseur_**, marque) <br/>
+**TypeArticles**(**_reference_article_**, prix, stock) <br/>
 
-**Entrepot**(**_reference_article_**, allée, numero_place) <br/>
+**Entrepot**(**_reference_article_**, allée, place) <br/>
 
 
 
 Clients(numero_client) ⊆  Commandes(numero_client) <br/>
 
+Commandes(reference_article) ⊆  Articles(reference_article) <br/>
+
 Articles(reference_article) ⊆  Commandes(reference_article) <br/>
 
-Articles(reference_article) = Entrepot(reference_article) <br/>
+Articles(reference_article) = TypeArticles(reference_article) <br/>
 
-Vendeur(numero_fournisseur) =  Articles(numero_fournisseur) <br/>
+Articles(reference_article) ⊆  Entrepot(reference_article) <br/>
 
