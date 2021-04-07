@@ -47,11 +47,9 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 
 **Commandes**(**_numero_commande_**, client, reference_article, adresse_livraison, date_achat, statut) <br/>
 
-**Articles**(**_reference_article_**, nom_article, numero_fournisseur, prix) <br/>
+**Articles**(**_reference_article_**, nom_article, numero_fournisseur, prix, nombre_articles) <br/>
 
-**Fournisseurs**(**_numero_fournisseur_**, marque) <br/>
-
-**Stocks**(**_reference_article_**, nombre_articles) <br/>
+**Vendeurs**(**_numero_fournisseur_**, marque) <br/>
 
 **Entrepot**(**_reference_article_**, allée, numero_place) <br/>
 
