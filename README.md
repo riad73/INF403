@@ -57,6 +57,8 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 
 Clients(numero_client) ⊆  Commandes(numero_client) <br/>
 
+Commandes(numero_commande) ⊆ Paniers(numero_commande) <br/>
+
 Commandes(reference_article) ⊆  Paniers(reference_article) <br/>
 
 Articles(reference_article) ⊆  TypesArticles(reference_article) <br/>
@@ -65,3 +67,4 @@ Articles(reference_article) = Entrepot(reference_article) <br/>
 
 Articles(reference_article) ⊆  Entrepot(reference_article) <br/>
 
+StatutCommande ∈ {expidée, transit, livrée}
