@@ -33,7 +33,8 @@ Grâce aux informations ci-dessus nous pouvons traduire les demandes du client p
 ![image](https://user-images.githubusercontent.com/58702474/114192616-fbbe0d00-994d-11eb-8608-599eff495fdb.png)
 
 
-### Partie 2: Traduction du modèle UML au relationnel.
+### Partie 2: Traduction du modèle UML au relationnel. <br/>
+<br/>
 
 A partir du diagramme UML nous allons déduire ci-dessous le modèle relationnel.<br/>
 
@@ -45,11 +46,11 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 
 **Commandes**(**_numero_commande_**, numero_client, adresse_livraison, date_achat, statut) <br/>
 
-**Articles**(**_reference_article_**, nom_article) <br/>
+**Articles**(**_reference_article_**) <br/>
 
-**TypeArticles**(**_reference_article_**, prix, stock) <br/>
+**TypeArticles**(**_nom_article_**, reference_article, prix, stock) <br/>
 
-**Entrepot**(**_reference_article_**, allée, place) <br/>
+**Entrepot**(**_allée, position_**, référence_article) <br/>
 
 
 
