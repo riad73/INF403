@@ -40,7 +40,7 @@ A partir du diagramme UML nous allons déduire ci-dessous le modèle relationnel
 
 Pour designer une clé primaire nous utiliserons une typographie bold et italique, _exemple_ **_userID_** <br/>
 
-**Clients**(**_numero_client_**, nom, prenom, adresse) 
+**Clients**(**_numero_client_**, nom, prenom, adresse) <br/>
 /* <i, n, p, a> ∈ Clients ⇐⇒ le client est indentifié par un numéro i, un prénom p, un nom m et une adresse a */<br/>
 
 **Paniers**(numero_commande, reference_article) <br/>
