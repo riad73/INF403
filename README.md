@@ -68,7 +68,7 @@ Commandes(reference_article) ⊆  Paniers(reference_article) <br/>
 
 Articles(reference_article) ⊆  TypesArticles(reference_article) <br/>
 
-Articles(reference_article) = Entrepot(reference_article) <br/>
+Articles(reference_article) ⊆ Entrepot(reference_article) <br/>
 
 Articles(reference_article) ⊆  Entrepot(reference_article) <br/>
 
