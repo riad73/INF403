@@ -40,18 +40,23 @@ A partir du diagramme UML nous allons déduire ci-dessous le modèle relationnel
 
 Pour designer une clé primaire nous utiliserons une typographie bold et italique, _exemple_ **_userID_** <br/>
 
-**Clients**(**_numero_client_**, nom, prenom, adresse) <br/>
+**Clients**(**_numero_client_**, nom, prenom, adresse) 
+/* <i, n, p, a> ∈ Clients ⇐⇒ le client est indentifié par un numéro i, un prénom p, un nom m et une adresse a */<br/>
 
-**Paniers**(numero_client, reference_article) <br/>
+**Paniers**(numero_commande, reference_article) <br/>
+/* <k, r> ∈ Paniers ⇐⇒ le panier contient le numéro de la commande k et la référence de l'article r */<br/>
 
 **Commandes**(**_numero_commande_**, numero_client, adresse_livraison, date_achat, statut) <br/>
+/* <k, i, l, d, s> ∈ Commandes ⇐⇒ la commande est identifié par un numéro de commande k, un numéro client qui a effectué une commande i, une adresse de livraison l, une date d'achat d et un statut de l'avancement de la commande s */<br/>
 
 **Articles**(**_reference_article_**) <br/>
-
+/* <r> ∈ Articles ⇐⇒ l'article est indentifié par une */<br/>
+  
 **TypeArticles**(**_nom_article_**, reference_article, prix, stock) <br/>
-
+/* <a, r, p, t> ∈ TypeArticles ⇐⇒ le type d'article est identifié par une nom d'article a, une référence r , un prix p et un stock t/<br/>
+  
 **Entrepot**(**_allée, position_**, référence_article) <br/>
-
+  /* <m, o, r, t> ∈ Entrepot ⇐⇒ les articles sont stockés par une référence d'article r dans un entrepot et indentifiable par une allée m et une position o*/<br/>
 <br/>
 <br/>
 
