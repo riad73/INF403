@@ -43,7 +43,7 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 **Clients**(**_numero_client_**, nom, prenom, adresse) <br/>
 /* <i, n, p, a> ∈ Clients ⇐⇒ le client est indentifié par un numéro i, un prénom p, un nom m et une adresse a */<br/>
 
-**Paniers**(numero_commande, reference_article) <br/>
+**Paniers**(**_reference_article_**, numero_commande) <br/>
 /* <k, r> ∈ Paniers ⇐⇒ le panier contient le numéro de la commande k et la référence de l'article r */<br/>
 
 **Commandes**(**_numero_commande_**, numero_client, adresse_livraison, date_achat, statut) <br/>
