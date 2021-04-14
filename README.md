@@ -49,7 +49,7 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 **Commandes**(**_numero_commande_**, numero_client, adresse_livraison, date_achat, statut) <br/>
 /* <k, i, l, d, s> ∈ Commandes ⇐⇒ la commande est identifié par un numéro de commande k, un numéro client qui a effectué une commande i, une adresse de livraison l, une date d'achat d et un statut de l'avancement de la commande s */<br/>
 
-**Articles**(**_reference_article_**) <br/>
+**Articles**(**_reference_article_**, numero_commande, nom_article, allée, place) <br/>
 /* <r> ∈ Articles ⇐⇒ l'article est indentifié par une référence r*/<br/>
   
 **TypeArticles**(**_nom_article_**, reference_article, prix, stock) <br/>
@@ -71,5 +71,7 @@ Paniers(reference_article) ⊆  Articles (reference_article) <br/>
 Articles(reference_article) ⊆  TypesArticles(reference_article) <br/>
 
 Articles(reference_article) ⊆ Entrepot(reference_article) <br/>
+
+___________________________ <br/>
 
 StatutCommande ∈ {expidée, transit, livrée}
