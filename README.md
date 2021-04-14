@@ -62,7 +62,9 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 
 Commandes[numero_client] ⊆ Client [numero_client] <br/>
 
-Paniers[numero_commande, reference_article] ⊆ Commandes[numero_client, reference_article] <br/>
+Paniers[numero_commande] ⊆ Commandes[numero_commande] <br/>
+
+Articles[numero_article] ⊆ Paniers[numero_article]
 
 Articles[numero_commande] ⊆ Commandes[numero_commande] <br/>
 
