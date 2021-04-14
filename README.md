@@ -65,7 +65,8 @@ Les domaines sont:<br/>
 domaine(numero_client)=domaine(numero_commande)=domaine(place)=domaine(reference_article)=domaine(prix) = entier > 0 <br/>
 domaine(nom)=domaine(prenom)=domaine(adresse)=domaine(adresse_livraison)=domaine(statut)=domaine(nom_article) = chaine de caractère <br/>
 domaine(date_achat) = date <br/>
-
+<br/>
+<br/>
 Commandes[numero_client] ⊆ Client [numero_client] <br/>
 
 Paniers[numero_commande] ⊆ Commandes[numero_commande] <br/>
