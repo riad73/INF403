@@ -64,7 +64,7 @@ Commandes[numero_client] ⊆ Client [numero_client] <br/>
 
 Paniers[numero_commande] ⊆ Commandes[numero_commande] <br/>
 
-Articles[numero_article] ⊆ Paniers[numero_article]
+Articles[reference_article] ⊆ Paniers[reference_article]
 
 Articles[numero_commande] ⊆ Commandes[numero_commande] <br/>
 
