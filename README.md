@@ -66,10 +66,10 @@ Commandes(numero_commande) ⊆ Paniers(numero_commande) <br/>
 
 Commandes(reference_article) ⊆  Paniers(reference_article) <br/>
 
+Paniers(reference_article) ⊆  Articles (reference_article) <br/>
+
 Articles(reference_article) ⊆  TypesArticles(reference_article) <br/>
 
 Articles(reference_article) ⊆ Entrepot(reference_article) <br/>
-
-Articles(reference_article) ⊆  Entrepot(reference_article) <br/>
 
 StatutCommande ∈ {expidée, transit, livrée}
