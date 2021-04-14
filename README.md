@@ -30,7 +30,7 @@ Voici les notions que le client souhaite que l'on mette en oeuvre:
 *Conception de notre diagramme UML* <br/>
 Grâce aux informations ci-dessus nous pouvons traduire les demandes du client par un diagramme UML.
 
-![image](https://user-images.githubusercontent.com/58702474/114567414-84e98280-9c73-11eb-9a8f-0fa61a85c824.png)
+![image](https://user-images.githubusercontent.com/58702474/114708795-1e746b00-9d2c-11eb-8140-fc17d192b3e9.png)
 
 
 ### Partie 2: Traduction du modèle UML au relationnel. <br/>
@@ -56,7 +56,7 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 /* <a, r, p, t> ∈ TypeArticles ⇐⇒ le type d'article est identifié par une nom d'article a, une référence r , un prix p et un stock t/<br/>
   
 **Entrepot**(**_allée, position_**, référence_article) <br/>
-  /* <m, o, r, t> ∈ Entrepot ⇐⇒ les articles sont stockés par une référence d'article r dans un entrepot et est indentifiable par une allée m et une position o*/<br/>
+  /* <m, o, r> ∈ Entrepot ⇐⇒ les articles sont stockés par une référence d'article r dans un entrepot et est indentifiable par une allée m et une position o*/<br/>
 <br/>
 <br/>
 
