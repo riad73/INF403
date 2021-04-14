@@ -30,7 +30,8 @@ Voici les notions que le client souhaite que l'on mette en oeuvre:
 *Conception de notre diagramme UML* <br/>
 Grâce aux informations ci-dessus nous pouvons traduire les demandes du client par un diagramme UML.
 
-![image](https://user-images.githubusercontent.com/58702474/114708795-1e746b00-9d2c-11eb-8140-fc17d192b3e9.png)
+![image](https://user-images.githubusercontent.com/58702474/114721444-37cfe400-9d39-11eb-8824-09c586877061.png)
+
 
 
 ### Partie 2: Traduction du modèle UML au relationnel. <br/>
