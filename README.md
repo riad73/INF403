@@ -53,13 +53,18 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 **Articles**(**_reference_article_**, numero_commande, nom_article, allée, place) <br/>
 /* <r> ∈ Articles ⇐⇒ l'article est indentifié par une référence r*/<br/>
   
-**TypeArticles**(**_nom_article_**, reference_article, prix, stock) <br/>
+**TypeArticles**(**_nom_article_**, reference_article, prix) <br/>
 /* <a, r, p, t> ∈ TypeArticles ⇐⇒ le type d'article est identifié par une nom d'article a, une référence r , un prix p et un stock t/<br/>
   
 **Entrepot**(**_allée, position_**, référence_article) <br/>
   /* <m, o, r> ∈ Entrepot ⇐⇒ les articles sont stockés par une référence d'article r dans un entrepot et est indentifiable par une allée m et une position o*/<br/>
 <br/>
 <br/>
+
+Les domaines sont:<br/>
+domaine(numero_client)=domaine(numero_commande)=domaine(place)=domaine(reference_article)=domaine(prix) = entier > 0 <br/>
+domaine(nom)=domaine(prenom)=domaine(adresse)=domaine(adresse_livraison)=domaine(statut)=domaine(nom_article) = chaine de caractère <br/>
+domaine(date_achat) = date <br/>
 
 Commandes[numero_client] ⊆ Client [numero_client] <br/>
 
