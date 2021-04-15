@@ -35,8 +35,8 @@ CREATE TABLE Paniers(
 	numero_commande INTEGER NOT NULL,
 	reference_article INTEGER NOT NULL,
 	CONSTRAINT pa_ck PRIMARY KEY (reference_article),
-	CONSTRAINT pa_fk FOREIGN KEY (numero_commande) references Commandes(numero_commande)
-	CONSTRAINT art_fk1 FOREIGN KEY (reference_article) references Paniers(reference_article)
+	CONSTRAINT pa_fk1 FOREIGN KEY (numero_commande) references Commandes(numero_commande)
+	CONSTRAINT pa_fk2 FOREIGN KEY (reference_article) references Paniers(reference_article)
 );
 
 	
@@ -46,7 +46,7 @@ CREATE TABLE Articles(
 	allee INTEGER NOT NULL,
 	position INTEGER NOT NULL,
 	CONSTRAINT art_pk PRIMARY KEY (reference_article),
-	Constraint art_fk3 FOREIGN KEY (allee,position) REFERENCES Entrepot(allee,position)
+	Constraint art_fk1 FOREIGN KEY (allee,position) REFERENCES Entrepot(allee,position)
 );
 
 CREATE TABLE TypeArticles(
