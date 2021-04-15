@@ -14,7 +14,8 @@ CREATE TABLE Clients(
 	nom TEXT, 
 	prenom TEXT ,
 	adresse TEXT NOT NULL,
-	CONSTRAINT cl_pk PRIMARY KEY (numero_client)
+	CONSTRAINT cl_pk PRIMARY KEY (numero_client),
+	CONSTRAINT cl_ck CHECK ((numero_client) > 0)
 );
 	
 	
@@ -27,7 +28,8 @@ CREATE TABLE Commandes(
 	statut TEXT NOT NULL,
 	CONSTRAINT com_pk PRIMARY KEY (numero_commande),
 	CONSTRAINT com_fk FOREIGN KEY (numero_client) references Clients(numero_client),
-	CONSTRAINT com_ck CHECK (statut in ("expédiée", "transit", "livrée"))
+	CONSTRAINT com_ck1 CHECK (statut in ("expédiée", "transit", "livrée")),
+	CONSTRAINT com_ck2 CHECK ((numero_commande) > 0)
 	
 );
 
@@ -35,7 +37,7 @@ CREATE TABLE Paniers(
 	numero_commande INTEGER NOT NULL,
 	reference_article INTEGER NOT NULL,
 	CONSTRAINT pa_ck PRIMARY KEY (reference_article),
-	CONSTRAINT pa_fk1 FOREIGN KEY (numero_commande) references Commandes(numero_commande)
+	CONSTRAINT pa_fk1 FOREIGN KEY (numero_commande) references Commandes(numero_commande),
 	CONSTRAINT pa_fk2 FOREIGN KEY (reference_article) references Paniers(reference_article)
 );
 
@@ -46,7 +48,8 @@ CREATE TABLE Articles(
 	allee INTEGER NOT NULL,
 	position INTEGER NOT NULL,
 	CONSTRAINT art_pk PRIMARY KEY (reference_article),
-	Constraint art_fk1 FOREIGN KEY (allee,position) REFERENCES Entrepot(allee,position)
+	CONSTRAINT art_fk1 FOREIGN KEY (allee,position) REFERENCES Entrepot(allee,position),
+	CONSTRAINT art_ck CHECK ((position) > 0)
 );
 
 CREATE TABLE TypeArticles(
@@ -60,6 +63,7 @@ CREATE TABLE Entrepot(
 	allee CHAR NOT NULL,
 	position INTEGER NOT NULL,
 	reference_article INTEGER NOT NULL,
-	CONSTRAINT ent_pk PRIMARY KEY (allee, position)
+	CONSTRAINT ent_pk PRIMARY KEY (allee, position),
+	CONSTRAINT ent_ck CHECK ((position) > 0)
 	
 );
