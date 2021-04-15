@@ -46,7 +46,6 @@ CREATE TABLE Articles(
 	allee INTEGER NOT NULL,
 	position INTEGER NOT NULL,
 	CONSTRAINT art_pk PRIMARY KEY (reference_article),
-	--,
 	Constraint art_fk3 FOREIGN KEY (allee,position) REFERENCES Entrepot(allee,position)
 );
 
@@ -54,8 +53,7 @@ CREATE TABLE TypeArticles(
 	nom_article TEXT NOT NULL,
 	reference_article INTEGER NOT NULL,
 	prix FLOAT NOT NULL,
-	CONSTRAINT typ_art_pk PRIMARY KEY (nom_article)--,
-	--CONSTRAINT typ_art_fk1 FOREIGN KEY (reference_article) references Articles(reference_article)
+	CONSTRAINT typ_art_pk PRIMARY KEY (nom_article)
 );
 
 CREATE TABLE Entrepot(
