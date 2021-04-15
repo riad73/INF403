@@ -22,7 +22,7 @@ Voici les notions que le client souhaite que l'on mette en oeuvre:
 
 **Les clients :** Les clients sont identifiés par un numéro unique, on représente aussi leur nom, prénom, adresse et date de naissance.
 
-**Les articles :** Les articles seront identifiable par un numéro qui correspond à la référence de l'article. De plus, les articles présent sur l'application auront un nom, une marque, un prix et une quantité (stock). Ces articles seront stockés dans l'entrepot de la boutique en ligne. Cet entrepot possède des allées correspondant à un caractère type : "A", "B"... et sont positionnés à un endroit étiquetté par un numéro.
+**Les articles :** Les articles seront identifiable par un numéro qui correspond à la référence de l'article. De plus, les articles présent sur l'application auront un nom, une marque ainsi qu'un prix. Ces articles seront stockés dans l'entrepot de la boutique en ligne. Cet entrepot possède des allées correspondant à un caractère du type : "A", "B"... et sont positionnés à un endroit étiquetté par un numéro.
 
 **Les commandes**: Les commandes quant à elle sont identifiable par un numéro de commande et comportera, le nom du client, son adresse, la référence de l'article commandé, la date d'achat ainsi que le statut de la commande (expédié, en transit ou livré). De plus, toutes les commandes effectuées seront stockées dans le panier de mes clients.
 
@@ -65,18 +65,15 @@ Les domaines sont:<br/>
 domaine(numero_client)=domaine(numero_commande)=domaine(place)=domaine(reference_article)=domaine(prix) = entier > 0 <br/>
 domaine(nom)=domaine(prenom)=domaine(adresse)=domaine(adresse_livraison)=domaine(statut)=domaine(nom_article) = chaine de caractère <br/>
 domaine(date_achat) = date <br/>
+domaine(allee) = caractère <br/>
 <br/>
 <br/>
 Commandes[numero_client] ⊆ Client [numero_client] <br/>
 
 Paniers[numero_commande] ⊆ Commandes[numero_commande] <br/>
 
-Articles[reference_article] ⊆ Paniers[reference_article]
+Paniers[reference_article] ⊆ Articles[reference_article] <br/>
 
-Articles[numero_commande] ⊆ Commandes[numero_commande] <br/>
-
-TypeArticles[nom_article] ⊆ Articles[nom_article] <br/>
-
-Entrepot[allee, position] ⊆ Articles[allee, position] <br/>
+Articles[allee, position] ⊆ Entrepot[allee, position]<br/>
 
 StatutCommande ∈ {expidée, transit, livrée}
