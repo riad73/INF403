@@ -10,7 +10,7 @@
 **To do:**
 
   - [x] Partie I
-  - [ ] Partie II (en cours)
+  - [x] Partie II 
   - [ ] Partie III
 
 ### Partie 1: Description du problème & modèle conceptuel.
