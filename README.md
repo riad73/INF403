@@ -24,15 +24,13 @@ Voici les notions que le client souhaite que l'on mette en oeuvre:
 
 **Les articles :** Les articles seront identifiable par un numéro qui correspond à la référence de l'article. De plus, les articles présent sur l'application auront un nom, une marque ainsi qu'un prix. Ces articles seront stockés dans l'entrepot de la boutique en ligne. Cet entrepot possède des allées correspondant à un caractère du type : "A", "B"... et sont positionnés à un endroit étiquetté par un numéro.
 
-**Les commandes**: Les commandes quant à elle sont identifiable par un numéro de commande et comportera, le nom du client, son adresse, la référence de l'article commandé, la date d'achat ainsi que le statut de la commande (expédié, en transit ou livré). De plus, toutes les commandes effectuées seront stockées dans le panier de mes clients.
+**Les commandes**: Les commandes quant à elle sont identifiable par un numéro de commande et comportera, le nom du client, son adresse de livraison, la référence de l'article commandé, la date d'achat ainsi que le statut de la commande (expédié, en transit ou livré). De plus, toutes les commandes effectuées seront stockées dans le panier de mes clients.
 
 
 *Conception de notre diagramme UML* <br/>
 Grâce aux informations ci-dessus nous pouvons traduire les demandes du client par un diagramme UML.
 
-![image](https://user-images.githubusercontent.com/58702474/114721444-37cfe400-9d39-11eb-8824-09c586877061.png)
-
-
+![image](https://user-images.githubusercontent.com/58702474/115001598-150e0e80-9ea4-11eb-96e0-e7323e1d8364.png)
 
 ### Partie 2: Traduction du modèle UML au relationnel. <br/>
 <br/>
@@ -44,17 +42,19 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 **Clients**(**_numero_client_**, nom, prenom, adresse) <br/>
 /* <i, n, p, a> ∈ Clients ⇐⇒ le client est indentifié par un numéro i, un prénom p, un nom m et une adresse a */<br/>
 
-**Paniers**(**_reference_article_**, numero_commande) <br/>
-/* <k, r> ∈ Paniers ⇐⇒ le panier contient le numéro de la commande k et la référence de l'article r */<br/>
 
 **Commandes**(**_numero_commande_**, numero_client, adresse_livraison, date_achat, statut) <br/>
 /* <k, i, l, d, s> ∈ Commandes ⇐⇒ la commande est identifié par un numéro de commande k, un numéro client qui a effectué une commande i, une adresse de livraison l, une date d'achat d et un statut de l'avancement de la commande s */<br/>
 
-**Articles**(**_reference_article_**, numero_commande, nom_article, allée, place) <br/>
-/* <r> ∈ Articles ⇐⇒ l'article est indentifié par une référence r*/<br/>
+
+**Paniers**(**_reference_article_**, numero_commande) <br/>
+/* <r, k> ∈ Paniers ⇐⇒ le panier contient le numéro de la commande k et la référence de l'article r */<br/>
+
+**Articles**(**_reference_article_**, nom_article, allée, place) <br/>
+/* <r, na, m, o> ∈ Articles ⇐⇒ l'article est indentifié par une référence r, un nom na, une allée m ainsi qu'une place dans l'allée o*/<br/>
   
 **TypeArticles**(**_nom_article_**, reference_article, prix) <br/>
-/* <a, r, p, t> ∈ TypeArticles ⇐⇒ le type d'article est identifié par une nom d'article a, une référence r , un prix p et un stock t/<br/>
+/* <a, r, p> ∈ TypeArticles ⇐⇒ le type d'article est identifié par une nom d'article a, une référence r et un prix p*/<br/>
   
 **Entrepot**(**_allée, position_**, référence_article) <br/>
   /* <m, o, r> ∈ Entrepot ⇐⇒ les articles sont stockés par une référence d'article r dans un entrepot et est indentifiable par une allée m et une position o*/<br/>
@@ -63,9 +63,9 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 
 Les domaines sont:<br/>
 domaine(numero_client)=domaine(numero_commande)=domaine(place)=domaine(reference_article)=domaine(prix) = entier > 0 <br/>
-domaine(nom)=domaine(prenom)=domaine(adresse)=domaine(adresse_livraison)=domaine(statut)=domaine(nom_article) = chaine de caractère <br/>
+domaine(nom)=domaine(prenom)=domaine(adresse)=domaine(adresse_livraison)=domaine(statut)=domaine(nom_article) = domaine(allee) = chaine de caractère <br/>
 domaine(date_achat) = date <br/>
-domaine(allee) = caractère <br/>
+<br/>
 <br/>
 <br/>
 Commandes[numero_client] ⊆ Client [numero_client] <br/>
