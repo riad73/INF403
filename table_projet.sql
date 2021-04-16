@@ -41,25 +41,6 @@ CREATE TABLE Paniers(
 	CONSTRAINT pa_fk2 FOREIGN KEY (reference_article) REFERENCES Articles(reference_article)
 );
 
-	
-CREATE TABLE Articles(
-	reference_article INTEGER NOT NULL,
-	nom_article TEXT NOT NULL,
-	allee CHAR NOT NULL,
-	position INTEGER NOT NULL,
-	CONSTRAINT art_pk PRIMARY KEY (reference_article),
-	CONSTRAINT art_fk1 FOREIGN KEY (allee,position) REFERENCES Entrepot(allee,position),
-	CONSTRAINT art_ck CHECK ((position) > 0)
-);
-
-CREATE TABLE TypeArticles(
-	nom_article TEXT NOT NULL,
-	reference_article INTEGER NOT NULL,
-	prix FLOAT NOT NULL,
-	CONSTRAINT typ_art_pk PRIMARY KEY (nom_article),
-	CONSTRAINT typ_art_ck CHECK ((prix) >0)
-);
-
 CREATE TABLE Entrepot(
 	allee CHAR NOT NULL,
 	position INTEGER NOT NULL,
@@ -68,3 +49,21 @@ CREATE TABLE Entrepot(
 	CONSTRAINT ent_ck CHECK ((position) > 0)
 	
 );
+CREATE TABLE Articles(
+	reference_article INTEGER NOT NULL,
+	nom_article TEXT NOT NULL,
+	allee CHAR NOT NULL,
+	position INTEGER NOT NULL,
+	CONSTRAINT art_pk PRIMARY KEY (reference_article),
+	CONSTRAINT art_fk1 FOREIGN KEY (allee,position) REFERENCES Entrepot(allee,position),
+	CONSTRAINT art_fk2 FOREIGN KEY (nom_article) REFERENCES TypeArticles(nom_article),
+	CONSTRAINT art_ck CHECK ((position) > 0)
+);
+
+CREATE TABLE TypeArticles(
+	nom_article TEXT NOT NULL,
+	prix FLOAT NOT NULL,
+	CONSTRAINT typ_art_pk PRIMARY KEY (nom_article),
+	CONSTRAINT typ_art_ck CHECK ((prix) >0)
+);
+
