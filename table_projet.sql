@@ -27,7 +27,7 @@ CREATE TABLE Commandes(
 	date_achat DATE NOT NULL,
 	statut TEXT NOT NULL,
 	CONSTRAINT com_pk PRIMARY KEY (numero_commande),
-	CONSTRAINT com_fk FOREIGN KEY (numero_client) references Clients(numero_client),
+	CONSTRAINT com_fk FOREIGN KEY (numero_client) REFERENCES Clients(numero_client),
 	CONSTRAINT com_ck1 CHECK (statut in ("expédiée", "transit", "livrée")),
 	CONSTRAINT com_ck2 CHECK ((numero_commande) > 0)
 	
@@ -37,8 +37,8 @@ CREATE TABLE Paniers(
 	numero_commande INTEGER NOT NULL,
 	reference_article INTEGER NOT NULL,
 	CONSTRAINT pa_ck PRIMARY KEY (reference_article),
-	CONSTRAINT pa_fk1 FOREIGN KEY (numero_commande) references Commandes(numero_commande),
-	CONSTRAINT pa_fk2 FOREIGN KEY (reference_article) references Articles(reference_article)
+	CONSTRAINT pa_fk1 FOREIGN KEY (numero_commande) REFERENCES Commandes(numero_commande),
+	CONSTRAINT pa_fk2 FOREIGN KEY (reference_article) REFERENCES Articles(reference_article)
 );
 
 	
