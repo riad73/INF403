@@ -76,4 +76,6 @@ Paniers[reference_article] ⊆ Articles[reference_article] <br/>
 
 Articles[allee, position] ⊆ Entrepot[allee, position]<br/>
 
+Articles[nom_article] ⊆ TypeArticles[nom_article]<br/>
+
 StatutCommande ∈ {expidée, transit, livrée}
