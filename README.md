@@ -56,8 +56,8 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 **TypeArticles**(**_nom_article_**, prix) <br/>
 /* <a, p> ∈ TypeArticles ⇐⇒ le type d'article est identifié par une nom d'article a et un prix p*/<br/>
   
-**Entrepot**(**_allée, position_**, référence_article) <br/>
-  /* <m, o, r> ∈ Entrepot ⇐⇒ les articles sont stockés par une référence d'article r dans un entrepot et est indentifiable par une allée m et une position o*/<br/>
+**Entrepot**(**_allée, position_**) <br/>
+  /* <m, o> ∈ Entrepot ⇐⇒ les articles sont stockés dans un entrepot et sont indentifiable par une allée m et une position o*/<br/>
 <br/>
 <br/>
 
