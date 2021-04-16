@@ -19,13 +19,13 @@ INSERT INTO Paniers VALUES (4,1000);
 INSERT INTO Articles VALUES(12, "NikeJordan", "A", 83);
 
 --Inserer dans l'entrepot un article sur une place déjà attribué.
-INSERT INTO Entrepot VALUES("A", 83, 16);
+INSERT INTO Entrepot VALUES("A", 83);
 
 --Inserer dans l'entrepot un article sur une place avec un nombre négatif.
-INSERT INTO Entrepot VALUES("A", -8, 19);
+INSERT INTO Entrepot VALUES("A", -8);
 
 --Inserer dans l'entrepot le meme article
-INSERT INTO Entrepot VALUES("G",1, 16);
+INSERT INTO Entrepot VALUES("G",1);
 
 --Inserer un article qui n'est pas présent dans type article ni dans l'entrepot
 INSERT INTO Articles VALUES(17, "Nitendo Switch", "A", 16);
@@ -34,5 +34,6 @@ INSERT INTO Articles VALUES(17, "Nitendo Switch", "A", 16);
 INSERT INTO Articles VALUES(17, "Caméra S3", "D", 2);
 
 --Inserer un prix negatif ou egale à 0
-INSERT INTO TypeArticles VALUES ("Tablette", 19, -200.3);
+INSERT INTO TypeArticles VALUES ("Tablette", -200.3);
+
 
