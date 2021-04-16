@@ -11,20 +11,23 @@ INSERT INTO Commandes VALUES (2,1,"Rue de la liberté", '2021-04-15', "expédié
 INSERT INTO Commandes VALUES (3,2,"Rue des ecoles", '2021-04-11', "livrée");
 INSERT INTO Commandes VALUES (4,4, "Rue de la bastille", '2021-03-01', "transit");
 
-INSERT INTO TypeArticles VALUES("NikeJordan", 12, 199.99);
-INSERT INTO TypeArticles VALUES("Skateboard", 13, 19.83); 
-INSERT INTO TypeArticles VALUES("Lit", 14, 500);
-INSERT INTO TypeArticles VALUES("Manteau", 15, 50.2);
-INSERT INTO TypeArticles VALUES("iphone 10", 16, 999);
-INSERT INTO TypeArticles VALUES("Sony S3", 17, 499);
+INSERT INTO TypeArticles VALUES("NikeJordan", 199.99);
+INSERT INTO TypeArticles VALUES("Skateboard", 19.83); 
+INSERT INTO TypeArticles VALUES("Lit", 500);
+INSERT INTO TypeArticles VALUES("Manteau", 50.2);
+INSERT INTO TypeArticles VALUES("iphone 10", 999);
+INSERT INTO TypeArticles VALUES("Sony S3", 499);
 
-INSERT INTO Entrepot VALUES("A", 83, 12);
-INSERT INTO Entrepot VALUES("B", 10, 13);
-INSERT INTO Entrepot VALUES("A", 1, 14);
-INSERT INTO Entrepot VALUES("G", 24, 15);
-INSERT INTO Entrepot VALUES("G",1, 16);
+INSERT INTO Entrepot VALUES("A", 83);
+INSERT INTO Entrepot VALUES("A", 84);
+INSERT INTO Entrepot VALUES("B", 10);
+INSERT INTO Entrepot VALUES("A", 1);
+INSERT INTO Entrepot VALUES("G", 24);
+INSERT INTO Entrepot VALUES("G",1);
+
 
 INSERT INTO Articles VALUES(12, "NikeJordan", "A", 83);
+INSERT INTO Articles VALUES(26, "NikeJordan", "A", 84);
 INSERT INTO Articles VALUES(13, "Skateboard", "B", 10);
 INSERT INTO Articles VALUES(14, "Lit", "A", 1);
 INSERT INTO Articles VALUES(15, "Manteau", "G", 24);
