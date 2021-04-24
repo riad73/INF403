@@ -74,7 +74,7 @@ Paniers[numero_commande] ⊆ Commandes[numero_commande] <br/>
 
 Paniers[reference_article] ⊆ Articles[reference_article] <br/>
 
-Articles[allee, position] ⊆ Entrepot[allee, position]<br/>
+Articles[allee, place] ⊆ Entrepot[allee, place]<br/>
 
 Articles[nom_article] ⊆ TypeArticles[nom_article]<br/>
 
