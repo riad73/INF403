@@ -43,21 +43,21 @@ CREATE TABLE Paniers(
 
 CREATE TABLE Entrepot(
 	allee CHAR NOT NULL,
-	position INTEGER NOT NULL,
+	place INTEGER NOT NULL,
 	reference_article INTEGER NOT NULL,
 	CONSTRAINT ent_pk PRIMARY KEY (allee, position),
-	CONSTRAINT ent_ck CHECK ((position) > 0)
+	CONSTRAINT ent_ck CHECK ((place) > 0)
 	
 );
 CREATE TABLE Articles(
 	reference_article INTEGER NOT NULL,
 	nom_article TEXT NOT NULL,
 	allee CHAR NOT NULL,
-	position INTEGER NOT NULL,
+	place INTEGER NOT NULL,
 	CONSTRAINT art_pk PRIMARY KEY (reference_article),
-	CONSTRAINT art_fk1 FOREIGN KEY (allee,position) REFERENCES Entrepot(allee,position),
+	CONSTRAINT art_fk1 FOREIGN KEY (allee,place) REFERENCES Entrepot(allee,place),
 	CONSTRAINT art_fk2 FOREIGN KEY (nom_article) REFERENCES TypeArticles(nom_article),
-	CONSTRAINT art_ck CHECK ((position) > 0)
+	CONSTRAINT art_ck CHECK ((place) > 0)
 );
 
 CREATE TABLE TypeArticles(
