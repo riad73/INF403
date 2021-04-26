@@ -71,7 +71,7 @@ domaine(date_achat) = date <br/>
 <br/>
 Commandes[numero_client] ⊆ Client [numero_client] <br/>
 
-Paniers[numero_commande] ⊆ Commandes[numero_commande] <br/>
+Paniers[numero_commande] ⊆ ??? = Commandes[numero_commande] <br/>
 
 Paniers[reference_article] ⊆ Articles[reference_article] <br/>
 
