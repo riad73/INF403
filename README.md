@@ -75,8 +75,8 @@ Paniers[numero_commande] ⊆ Commandes[numero_commande] <br/>
 
 Paniers[reference_article] ⊆ Articles[reference_article] <br/>
 
-Articles[allee, place] ⊆ ??= Entrepot[allee, place]<br/>
+Articles[allee, place] = Entrepot[allee, place]<br/>
 
-Articles[nom_article] ⊆ ?? = TypeArticles[nom_article]<br/>
+Articles[nom_article] = TypeArticles[nom_article]<br/>
 
 StatutCommande ∈ {expidée, transit, livrée}
