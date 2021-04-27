@@ -5,6 +5,7 @@ DROP TABLE IF EXISTS Entrepot;
 DROP TABLE IF EXISTS Commandes;
 DROP TABLE IF EXISTS Clients;
 DROP VIEW IF EXISTS TypeArticles_View;
+DROP VIEW IF EXISTS Commandes_View;
 DROP TRIGGER IF EXISTS update_disponibilite_articles;
 
 
@@ -71,11 +72,18 @@ CREATE TABLE TypeArticles(
 	CONSTRAINT typ_art_ck CHECK ((prix) >0)
 );
 
-CREATE VIEW TypeArticles_View(nom_article, prix,stock, nbDisponible) AS
-	SELECT nom_article, prix, COUNT(reference_article), 0
-	FROM TypeArticles T
-	JOIN Articles A USING (nom_article)
+CREATE VIEW TypeArticles_View(nom_article, prix,stock) AS
+	SELECT nom_article, prix, COUNT(reference_article)
+	FROM TypeArticles
+	JOIN Articles USING (nom_article)
 	GROUP BY (nom_article)
+	;
+	
+CREATE VIEW Commandes_View(numero_commande ,numero_client ,adresse_livraison,date_achat,statut,quantite) AS
+	SELECT numero_commande,numero_client ,adresse_livraison,date_achat,statut,COUNT(reference_article)
+	FROM Commandes
+	JOIN Paniers USING (numero_commande)
+	GROUP BY (numero_commande)
 	;
 	
 CREATE TRIGGER update_disponibilite_articles AFTER INSERT ON Paniers 
