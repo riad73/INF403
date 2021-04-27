@@ -37,7 +37,7 @@ Grâce aux informations ci-dessus nous pouvons traduire les demandes du client p
 <br/>
 
 
-*Règles de traductions:*</br>
+**Règles de traductions:**</br>
 Nom classe singulier → Nom table pluriel </br>
 CamelCase → Snake_case </br>
 attribut → attribut_nomclasse </br>
