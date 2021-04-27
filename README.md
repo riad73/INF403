@@ -30,7 +30,8 @@ Voici les notions que le client souhaite que l'on mette en oeuvre:
 *Conception de notre diagramme UML* <br/>
 Grâce aux informations ci-dessus nous pouvons traduire les demandes du client par un diagramme UML.
 
-![image](https://user-images.githubusercontent.com/58702474/116254488-aa958200-a771-11eb-9ca3-c8e1c9118325.png)
+![image](https://user-images.githubusercontent.com/58702474/116268413-95265500-a77d-11eb-9876-c773615c2dae.png)
+
 
 
 ### Partie 2: Traduction du modèle UML au relationnel. <br/>
@@ -41,6 +42,7 @@ Grâce aux informations ci-dessus nous pouvons traduire les demandes du client p
 Nom classe singulier → Nom table pluriel </br>
 CamelCase → Snake_case </br>
 attribut → attribut_nomclasse </br>
+/attribut  → view </br>
 </br>
 A partir du diagramme UML nous allons déduire ci-dessous le modèle relationnel.<br/>
 
