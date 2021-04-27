@@ -1,9 +1,11 @@
-DROP TABLE IF EXISTS TypeArticles;
 DROP TABLE IF EXISTS Paniers;
+DROP TABLE IF EXISTS TypeArticles;
 DROP TABLE IF EXISTS Articles;
 DROP TABLE IF EXISTS Entrepot;
 DROP TABLE IF EXISTS Commandes;
 DROP TABLE IF EXISTS Clients;
+DROP VIEW IF EXISTS TypeArticles_View;
+DROP TRIGGER IF EXISTS update_disponibilite_articles;
 
 
 
@@ -37,27 +39,29 @@ CREATE TABLE Paniers(
 	numero_commande INTEGER NOT NULL,
 	reference_article INTEGER NOT NULL,
 	CONSTRAINT pa_ck PRIMARY KEY (reference_article),
-	CONSTRAINT pa_fk1 FOREIGN KEY (numero_commande) REFERENCES Commandes(numero_commande),
+	CONSTRAINT pa_fk1 FOREIGN KEY (numero_commande) REFERENCES Commandes(numero_commande) ON DELETE CASCADE,
 	CONSTRAINT pa_fk2 FOREIGN KEY (reference_article) REFERENCES Articles(reference_article)
 );
 
 CREATE TABLE Entrepot(
 	allee CHAR NOT NULL,
 	place INTEGER NOT NULL,
-	reference_article INTEGER NOT NULL,
-	CONSTRAINT ent_pk PRIMARY KEY (allee, position),
+	adresse_entrepot TEXT NOT NULL,
+	CONSTRAINT ent_pk PRIMARY KEY (allee, place),
 	CONSTRAINT ent_ck CHECK ((place) > 0)
-	
 );
+
 CREATE TABLE Articles(
 	reference_article INTEGER NOT NULL,
 	nom_article TEXT NOT NULL,
 	allee CHAR NOT NULL,
 	place INTEGER NOT NULL,
+	disponible TEXT NOT NULL,
 	CONSTRAINT art_pk PRIMARY KEY (reference_article),
-	CONSTRAINT art_fk1 FOREIGN KEY (allee,place) REFERENCES Entrepot(allee,place),
-	CONSTRAINT art_fk2 FOREIGN KEY (nom_article) REFERENCES TypeArticles(nom_article),
-	CONSTRAINT art_ck CHECK ((place) > 0)
+	CONSTRAINT art_fk1 FOREIGN KEY (allee,place) REFERENCES Entrepot(allee,place)ON DELETE CASCADE,
+	CONSTRAINT art_fk2 FOREIGN KEY (nom_article) REFERENCES TypeArticles(nom_article) ON DELETE CASCADE,
+	CONSTRAINT art_ck1 CHECK ((place) > 0),
+	CONSTRAINT art_ck2 CHECK ((disponible) IN ("TRUE","FALSE"))
 );
 
 CREATE TABLE TypeArticles(
@@ -67,3 +71,18 @@ CREATE TABLE TypeArticles(
 	CONSTRAINT typ_art_ck CHECK ((prix) >0)
 );
 
+CREATE VIEW TypeArticles_View(nom_article, prix,stock, nbDisponible) AS
+	SELECT nom_article, prix, COUNT(reference_article), 0
+	FROM TypeArticles T
+	JOIN Articles A USING (nom_article)
+	GROUP BY (nom_article)
+	;
+	
+CREATE TRIGGER update_disponibilite_articles AFTER INSERT ON Paniers 
+  BEGIN
+    UPDATE Articles SET disponible="FALSE" 
+    WHERE reference_article IN (
+    SELECT reference_article
+    FROM Articles
+	JOIN Paniers USING(reference_article));
+  END;
