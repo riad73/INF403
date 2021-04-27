@@ -38,9 +38,9 @@ Grâce aux informations ci-dessus nous pouvons traduire les demandes du client p
 
 
 Règles de traductions:
-Nom classe singulier → Nom table pluriel
-CamelCase → Snake_case
-attribut → attribut_nomclasse
+Nom classe singulier → Nom table pluriel </br>
+CamelCase → Snake_case </br>
+attribut → attribut_nomclasse </br>
 
 </br>
 </br>
