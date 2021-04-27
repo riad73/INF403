@@ -36,6 +36,14 @@ Grâce aux informations ci-dessus nous pouvons traduire les demandes du client p
 ### Partie 2: Traduction du modèle UML au relationnel. <br/>
 <br/>
 
+
+Règles de traductions:
+Nom classe singulier → Nom table pluriel
+CamelCase → Snake_case
+attribut → attribut_nomclasse
+
+</br>
+</br>
 A partir du diagramme UML nous allons déduire ci-dessous le modèle relationnel.<br/>
 
 Pour designer une clé primaire nous utiliserons une typographie bold et italique, _exemple_ **_userID_** <br/>
@@ -69,6 +77,8 @@ domaine(date_achat) = date <br/>
 <br/>
 <br/>
 <br/>
+
+
 Commandes[numero_client] ⊆ Client [numero_client] <br/>
 
 Paniers[numero_commande] = Commandes[numero_commande] <br/>
