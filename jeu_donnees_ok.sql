@@ -16,22 +16,21 @@ INSERT INTO TypeArticles VALUES("Skateboard", 19.83);
 INSERT INTO TypeArticles VALUES("Lit", 500);
 INSERT INTO TypeArticles VALUES("Manteau", 50.2);
 INSERT INTO TypeArticles VALUES("iphone 10", 999);
-INSERT INTO TypeArticles VALUES("Sony S3", 499);
 
-INSERT INTO Entrepot VALUES("A", 83);
-INSERT INTO Entrepot VALUES("A", 84);
-INSERT INTO Entrepot VALUES("B", 10);
-INSERT INTO Entrepot VALUES("A", 1);
-INSERT INTO Entrepot VALUES("G", 24);
-INSERT INTO Entrepot VALUES("G",1);
+INSERT INTO Entrepot VALUES("A", 83, "23 Rue des iles");
+INSERT INTO Entrepot VALUES("A", 84, "23 Rue des iles");
+INSERT INTO Entrepot VALUES("B", 10, "23 Rue des iles");
+INSERT INTO Entrepot VALUES("A", 1, "23 Rue des iles");
+INSERT INTO Entrepot VALUES("G", 24, "23 Rue des iles");
+INSERT INTO Entrepot VALUES("G",1, "23 Rue des iles");
 
 
-INSERT INTO Articles VALUES(12, "NikeJordan", "A", 83);
-INSERT INTO Articles VALUES(26, "NikeJordan", "A", 84);
-INSERT INTO Articles VALUES(13, "Skateboard", "B", 10);
-INSERT INTO Articles VALUES(14, "Lit", "A", 1);
-INSERT INTO Articles VALUES(15, "Manteau", "G", 24);
-INSERT INTO Articles VALUES(16, "iphone 10", "G", 1);
+INSERT INTO Articles VALUES(12, "NikeJordan", "A", 83, "TRUE");
+INSERT INTO Articles VALUES(26, "NikeJordan", "A", 84, "TRUE");
+INSERT INTO Articles VALUES(13, "Skateboard", "B", 10, "TRUE");
+INSERT INTO Articles VALUES(14, "Lit", "A", 1, "TRUE");
+INSERT INTO Articles VALUES(15, "Manteau", "G", 24, "TRUE");
+INSERT INTO Articles VALUES(16, "iphone 10", "G", 1, "TRUE");
 
 INSERT INTO Paniers VALUES (1,12);
 INSERT INTO Paniers VALUES (2,13);
