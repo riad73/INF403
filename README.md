@@ -37,12 +37,10 @@ Grâce aux informations ci-dessus nous pouvons traduire les demandes du client p
 <br/>
 
 
-Règles de traductions:
+*Règles de traductions:*</br>
 Nom classe singulier → Nom table pluriel </br>
 CamelCase → Snake_case </br>
 attribut → attribut_nomclasse </br>
-
-</br>
 </br>
 A partir du diagramme UML nous allons déduire ci-dessous le modèle relationnel.<br/>
 
