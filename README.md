@@ -51,9 +51,11 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 /* <i, n, p, a> ∈ Clients ⇐⇒ le client est indentifié par un numéro i, un prénom p, un nom m et une adresse a */<br/>
 
 
-**Commandes**(**_numero_commande_**, numero_client, adresse_livraison, date_achat, statut) <br/>
+**Commandes_base**(**_numero_commande_**, numero_client, adresse_livraison, date_achat, statut) <br/>
 /* <k, i, l, d, s> ∈ Commandes ⇐⇒ la commande est identifié par un numéro de commande k, un numéro client qui a effectué une commande i, une adresse de livraison l, une date d'achat d et un statut de l'avancement de la commande s */<br/>
 
+**(View) Commandes_base**(**_numero_commande_**, numero_client, adresse_livraison, date_achat, statut, quantité) <br/>
+/* <k, i, l, d, s, q> ∈ Commandes ⇐⇒ la commande est identifié par un numéro de commande k, un numéro client qui a effectué une commande i, une adresse de livraison l, une date d'achat d, un statut de l'avancement de la commande s et le nombre d'articles dans la commmande q*/<br/>
 
 **Paniers**(**_reference_article_**, numero_commande) <br/>
 /* <r, k> ∈ Paniers ⇐⇒ le panier contient le numéro de la commande k et la référence de l'article r */<br/>
