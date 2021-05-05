@@ -123,5 +123,28 @@ A partir du menu d'authentification (après l'éxecution de la commande [c] se c
  
  ![image](https://user-images.githubusercontent.com/58702474/117142302-d1763880-adaf-11eb-85ad-ce25e9d8b16b.png)
 
- 
+  L'objectif de cette partie est de montrer les principales fonctionnalitées de l'application <br/>
+  
+ - Les articles
+    ![image](https://user-images.githubusercontent.com/58702474/117142645-392c8380-adb0-11eb-81ec-50c485396d7b.png)
+    
+    En navigant sur la page article on a tout les articles présents sur la base de données même ceux qui sont indisponible.
+    
+ - Les types d'articles
+    ![image](https://user-images.githubusercontent.com/58702474/117143457-28c8d880-adb1-11eb-9ef8-46d25172c682.png)
+    
+    Les types articles sont le résultat de la view de type article c'est à dire qu'on a assez à toutes les informations utiles pour décrire un produit.
+    
+ - Effectuer une commande 
+    ![image](https://user-images.githubusercontent.com/58702474/117143780-7ba29000-adb1-11eb-9134-a64be144ee2d.png)
+    
+    Lorsque l'on souhaite commander on a un panier qui affiche tout les articles qu'on a pris avec le total en €. Ce panier se met à jour en temps réel et on peut supprimer des articles quand on souhaite.
+    
+ - Mes commandes
+   ![image](https://user-images.githubusercontent.com/58702474/117144309-13a07980-adb2-11eb-9bc8-a673a110c8d0.png)
+    
+    On affiche ici toutes les dernieres commandes trié de la plus ancienne à la plus récente (en suivant l'ordre de la console python).
+    De plus on peut avoir les informations des dernieres commandes (appuyez sur i).
+    ![image](https://user-images.githubusercontent.com/58702474/117145051-f91ad000-adb2-11eb-9c30-803b15fc7fa6.png)
+
        
