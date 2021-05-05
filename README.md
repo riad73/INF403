@@ -36,13 +36,16 @@ Grâce aux informations ci-dessus nous pouvons traduire les demandes du client p
 ### Partie 2: Traduction du modèle UML au relationnel. <br/>
 <br/>
 
+#### Règles de traductions</br>
 
-**Règles de traductions:**</br>
 Nom classe singulier → Nom table pluriel </br>
 CamelCase → Snake_case </br>
 attribut → attribut_nomclasse </br>
 /attribut  → view </br>
 </br>
+
+
+#### Modèle relationnel</br>
 A partir du diagramme UML nous allons déduire ci-dessous le modèle relationnel.<br/>
 
 Pour designer une clé primaire nous utiliserons une typographie bold et italique, _exemple_ **_userID_** <br/>
@@ -74,14 +77,16 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 <br/>
 <br/>
 
+
+#### Les domaines</br>
 Les domaines sont:<br/>
 domaine(numero_client)=domaine(numero_commande)=domaine(place)=domaine(reference_article)=domaine(prix)=domaine(stock)=domaine(quantite) = entier > 0 <br/>
 domaine(nom)=domaine(prenom)=domaine(adresse)=domaine(adresse_livraison)=domaine(statut)=domaine(nom_article) = domaine(allee) = domaine(adresse_entrepot)=domaine(disponible) = chaine de caractère <br/>
 domaine(date_achat) = date <br/>
 <br/>
 <br/>
-<br/>
 
+#### Les contraintes d'intégrités</br>
 
 Commandes[numero_client] ⊆ Client [numero_client] <br/>
 
