@@ -99,6 +99,7 @@ Disponible ∈ {TRUE, FALSE} <br/>
 
 <br/>
 <br/>
+
 ### Partie 3: Réalisation d'une application Python. <br/>
 
 #### Connexion </br>
