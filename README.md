@@ -99,7 +99,9 @@ StatutCommande ∈ {expidée, transit, livrée} <br/<
 
 ### Partie 3: Réalisation d'une application Python. <br/>
 
+####Connexion </br>
 A partir du menu d'authentification (après l'éxecution de la commande [c] se connecter) vous avez le choix de vous connectez:
+![image](https://user-images.githubusercontent.com/58702474/117122099-cadac780-ad95-11eb-8a2f-b246761dd9e5.png)
 
 - Classique<br/>
   ``` numero du compte ```
