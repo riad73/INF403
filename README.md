@@ -22,9 +22,9 @@ Voici les notions que le client souhaite que l'on mette en oeuvre:
 
 **Les clients :** Les clients sont identifiés par un numéro unique, on représente aussi leur nom, prénom, adresse et date de naissance.
 
-**Les articles :** Les articles seront identifiable par un numéro qui correspond à la référence de l'article. De plus, les articles présent sur l'application auront un nom, une marque ainsi qu'un prix. Ces articles seront stockés dans l'entrepot de la boutique en ligne. Cet entrepot possède des allées correspondant à un caractère du type : "A", "B"... et sont positionnés à des endroits étiquettés par un numéro.
+**Les articles :** Les articles seront identifiable par un numéro qui correspond à la référence de l'article. De plus, les articles présent sur l'application auront un nom, une marque ainsi qu'un prix. Ces articles seront stockés dans l'entrepot de la boutique en ligne. Cet entrepot possède des allées correspondant à un caractère du type : "A", "B"... et sont positionnés à des endroits étiquettés par un numéro. Pour faciliter la gestion des articles les vendeurs souhaitent pouvoir gerer le stock, de même il souhaite pouvoir indiquer si un articile est disponible ou non.
 
-**Les commandes**: Les commandes quant à elle sont identifiable par un numéro de commande et comportera, le nom du client, son adresse de livraison, la référence de l'article commandé, la date d'achat ainsi que le statut de la commande (expédié, en transit ou livré). De plus, toutes les commandes effectuées seront stockées dans le panier de mes clients.
+**Les commandes**: Les commandes quant à elle sont identifiable par un numéro de commande et comportera, le nom du client, son adresse de livraison, la référence de l'article commandé, la date d'achat ainsi que le statut de la commande (expédié, en transit ou livré). De plus, toutes les commandes effectuées seront stockées dans le panier des clients.
 
 
 *Conception de notre diagramme UML* <br/>
@@ -54,7 +54,7 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 **Commandes_base**(**_numero_commande_**, numero_client, adresse_livraison, date_achat, statut) <br/>
 /* <k, i, l, d, s> ∈ Commandes ⇐⇒ la commande est identifié par un numéro de commande k, un numéro client qui a effectué une commande i, une adresse de livraison l, une date d'achat d et un statut de l'avancement de la commande s */<br/>
 
-**(View) Commandes_base**(**_numero_commande_**, numero_client, adresse_livraison, date_achat, statut, quantité) <br/>
+**(View) Commandes_base**(**_numero_commande_**, numero_client, adresse_livraison, date_achat, statut, quantite) <br/>
 /* <k, i, l, d, s, q> ∈ Commandes ⇐⇒ la commande est identifié par un numéro de commande k, un numéro client qui a effectué une commande i, une adresse de livraison l, une date d'achat d, un statut de l'avancement de la commande s et le nombre d'articles dans la commmande q*/<br/>
 
 **Paniers**(**_reference_article_**, numero_commande) <br/>
@@ -75,8 +75,8 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 <br/>
 
 Les domaines sont:<br/>
-domaine(numero_client)=domaine(numero_commande)=domaine(place)=domaine(reference_article)=domaine(prix) = entier > 0 <br/>
-domaine(nom)=domaine(prenom)=domaine(adresse)=domaine(adresse_livraison)=domaine(statut)=domaine(nom_article) = domaine(allee) = chaine de caractère <br/>
+domaine(numero_client)=domaine(numero_commande)=domaine(place)=domaine(reference_article)=domaine(prix)=domaine(stock)=domaine(quantite) = entier > 0 <br/>
+domaine(nom)=domaine(prenom)=domaine(adresse)=domaine(adresse_livraison)=domaine(statut)=domaine(nom_article) = domaine(allee) = domaine(adresse_entrepot) = chaine de caractère <br/>
 domaine(date_achat) = date <br/>
 <br/>
 <br/>
@@ -93,7 +93,9 @@ Articles[allee, place] = Entrepot[allee, place]<br/>
 
 Articles[nom_article] = TypeArticles[nom_article]<br/>
 
-StatutCommande ∈ {expidée, transit, livrée} <br/<
+StatutCommande ∈ {expidée, transit, livrée} <br/>
+
+Disponible ∈ {TRUE, FALSE} <br/>
 
 
 
@@ -103,9 +105,15 @@ StatutCommande ∈ {expidée, transit, livrée} <br/<
 A partir du menu d'authentification (après l'éxecution de la commande [c] se connecter) vous avez le choix de vous connecter sur différents comptes: <br/>
 ![image](https://user-images.githubusercontent.com/58702474/117122099-cadac780-ad95-11eb-8a2f-b246761dd9e5.png)
 
-- Classique<br/>
-  ``` numero du compte ```
-- Vendeur<br/>
-  ```seller```
-- Administrateur<br/>
-  ```admin```
+- Identification classique<br/>
+                       ``` numero du compte ```
+      L'identification classique permet à l'utilisateur d'avoir l'expérience d'un client dans une boutique ordinaire. Il peut donc par le menu naviguer sur différentes sections tel que la visualisation de ses dernieres commandes, le catalogue ou encore l'achat.             
+         
+- Identification vendeur<br/>
+                      ```seller```
+      Un vendeur a un menu personnalisé, il peut  ajouter des articles en fonction de son stock ou encore effectuer des promotions sur certains produit.
+      
+- Identification administrateur<br/>
+                      ```admin```
+      L'administrateur quant à lui gère tout le back-end c'est à dire il peut refresh la base de donnée, inserer ses propres requêtes ou encore inserer des listes de requetes d'insertion comme 'Insert_OK'.              
+       
