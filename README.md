@@ -106,14 +106,16 @@ A partir du menu d'authentification (après l'éxecution de la commande [c] se c
 ![image](https://user-images.githubusercontent.com/58702474/117122099-cadac780-ad95-11eb-8a2f-b246761dd9e5.png)
 
 - Identification classique<br/>
-                       ``` numero du compte     exemple: Entrez votre numéro de compte: 1```
-      L'identification classique permet à l'utilisateur d'avoir l'expérience d'un client dans une boutique ordinaire. Il peut donc par le menu naviguer sur différentes sections tel que la visualisation de ses dernieres commandes, le catalogue ou encore l'achat.             
+                       ``` numero du compte```
+      L'identification classique permet à l'utilisateur d'avoir l'expérience d'un client dans une boutique ordinaire. Il peut donc par le menu naviguer sur différentes sections tel que la visualisation de ses dernieres commandes, le catalogue ou encore l'achat.      
+      _exemple: Entrez votre numéro de compte: 1_
          
 - Identification vendeur<br/>
-                      ```seller     exemple: Entrez votre numéro de compte: seller```
+                      ```seller```
       Un vendeur a un menu personnalisé, il peut  ajouter des articles en fonction de son stock ou encore effectuer des promotions sur certains produit.
-      
+       _exemple: Entrez votre numéro de compte: seller_
 - Identification administrateur<br/>
-                      ```admin     exemple: Entrez votre numéro de compte: admin```
+                      ```admin```
       L'administrateur quant à lui gère tout le back-end c'est à dire il peut refresh la base de donnée, inserer ses propres requêtes ou encore inserer des listes de requetes d'insertion comme 'Insert_OK'.              
+      _exemple: Entrez votre numéro de compte: admin_
        
