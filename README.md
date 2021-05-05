@@ -11,7 +11,7 @@
 
   - [x] Partie I
   - [x] Partie II 
-  - [ ] Partie III
+  - [x] Partie III
 
 ### Partie 1: Description du problème & modèle conceptuel.
 
@@ -93,4 +93,17 @@ Articles[allee, place] = Entrepot[allee, place]<br/>
 
 Articles[nom_article] = TypeArticles[nom_article]<br/>
 
-StatutCommande ∈ {expidée, transit, livrée}
+StatutCommande ∈ {expidée, transit, livrée} <br/<
+
+
+
+### Partie 3: Réalisation d'une application Python. <br/>
+
+A partir du menu d'authentification (après l'éxecution de la commande [c] se connecter) vous avez le choix de vous connectez:
+
+- Classique
+  ``` numero du compte ```
+- Vendeur
+  ```seller```
+- Administrateur
+  ```admin```
