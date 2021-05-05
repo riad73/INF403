@@ -97,8 +97,8 @@ StatutCommande ∈ {expidée, transit, livrée} <br/>
 
 Disponible ∈ {TRUE, FALSE} <br/>
 
-
-
+<br/>
+<br/>
 ### Partie 3: Réalisation d'une application Python. <br/>
 
 #### Connexion </br>
@@ -107,7 +107,7 @@ A partir du menu d'authentification (après l'éxecution de la commande [c] se c
 
 - Identification classique<br/>
                        ``` numero du compte```
-      L'identification classique permet à l'utilisateur d'avoir l'expérience d'un client dans une boutique ordinaire. Il peut donc par le menu naviguer sur différentes sections tel que la visualisation de ses dernieres commandes, le catalogue ou encore l'achat.      
+      L'identification classique permet à l'utilisateur d'avoir l'expérience d'un client dans une boutique ordinaire. Il peut donc par le menu naviguer sur différentes sections tel que la visualisation de ses dernieres commandes, le catalogue ou encore l'achat. <br/>
       _exemple: Entrez votre numéro de compte: 1_
          
 - Identification vendeur<br/>
