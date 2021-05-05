@@ -60,8 +60,8 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 **Paniers**(**_reference_article_**, numero_commande) <br/>
 /* <r, k> ∈ Paniers ⇐⇒ le panier contient le numéro de la commande k et la référence de l'article r */<br/>
 
-**Articles**(**_reference_article_**, nom_article, allée, place) <br/>
-/* <r, na, m, o> ∈ Articles ⇐⇒ l'article est indentifié par une référence r, un nom na, une allée m ainsi qu'une place dans l'allée o*/<br/>
+**Articles**(**_reference_article_**, nom_article, allée, place, disponible) <br/>
+/* <r, na, m, o, di> ∈ Articles ⇐⇒ l'article est indentifié par une référence r, un nom na, une allée m ainsi qu'une place dans l'allée o. De plus la diponibilité de l'article est définie par une booléen di*/<br/>
   
 **TypeArticles_base**(**_nom_article_**, prix) <br/>
 /* <a, p> ∈ TypeArticles ⇐⇒ le type d'article est identifié par une nom d'article a et un prix p */<br/>
