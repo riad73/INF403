@@ -106,7 +106,7 @@ A partir du menu d'authentification (après l'éxecution de la commande [c] se c
 ![image](https://user-images.githubusercontent.com/58702474/117122099-cadac780-ad95-11eb-8a2f-b246761dd9e5.png)
 
 - Identification classique<br/>
-                       ``` numero du compte _ex: Entrez votre numéro de compte: 1```
+                       ``` numero du compte _ex: Entrez votre numéro de compte: 1_```
       L'identification classique permet à l'utilisateur d'avoir l'expérience d'un client dans une boutique ordinaire. Il peut donc par le menu naviguer sur différentes sections tel que la visualisation de ses dernieres commandes, le catalogue ou encore l'achat.             
          
 - Identification vendeur<br/>
