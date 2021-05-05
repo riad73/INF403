@@ -113,9 +113,15 @@ A partir du menu d'authentification (après l'éxecution de la commande [c] se c
 - Identification vendeur<br/>
                       ```seller```
       Un vendeur a un menu personnalisé, il peut  ajouter des articles en fonction de son stock ou encore effectuer des promotions sur certains produit.
-       _exemple: Entrez votre numéro de compte: seller_
+       _exemple: Entrez votre numéro de compte: seller_<br/>
 - Identification administrateur<br/>
                       ```admin```
-      L'administrateur quant à lui gère tout le back-end c'est à dire il peut refresh la base de donnée, inserer ses propres requêtes ou encore inserer des listes de requetes d'insertion comme 'Insert_OK'.              
+      L'administrateur quant à lui gère tout le back-end c'est à dire il peut refresh la base de donnée, inserer ses propres requêtes ou encore inserer des listes de requetes d'insertion comme 'Insert_OK'.              <br/>
       _exemple: Entrez votre numéro de compte: admin_
+      
+ #### Menu client </br>    
+ 
+ ![image](https://user-images.githubusercontent.com/58702474/117142302-d1763880-adaf-11eb-85ad-ce25e9d8b16b.png)
+
+ 
        
