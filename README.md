@@ -76,7 +76,7 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 
 Les domaines sont:<br/>
 domaine(numero_client)=domaine(numero_commande)=domaine(place)=domaine(reference_article)=domaine(prix)=domaine(stock)=domaine(quantite) = entier > 0 <br/>
-domaine(nom)=domaine(prenom)=domaine(adresse)=domaine(adresse_livraison)=domaine(statut)=domaine(nom_article) = domaine(allee) = domaine(adresse_entrepot) = chaine de caractère <br/>
+domaine(nom)=domaine(prenom)=domaine(adresse)=domaine(adresse_livraison)=domaine(statut)=domaine(nom_article) = domaine(allee) = domaine(adresse_entrepot)=domaine(disponible) = chaine de caractère <br/>
 domaine(date_achat) = date <br/>
 <br/>
 <br/>
