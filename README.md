@@ -101,9 +101,9 @@ StatutCommande ∈ {expidée, transit, livrée} <br/<
 
 A partir du menu d'authentification (après l'éxecution de la commande [c] se connecter) vous avez le choix de vous connectez:
 
-- Classique
+- Classique<br/>
   ``` numero du compte ```
-- Vendeur
+- Vendeur<br/>
   ```seller```
-- Administrateur
+- Administrateur<br/>
   ```admin```
