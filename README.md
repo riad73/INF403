@@ -172,7 +172,7 @@ A partir du menu d'authentification (après l'éxecution de la commande [c] se c
     <br/>
      <br/>
      
-    Je vous laisse découvrir le reste par vous même 😊
+    Je vous laisse découvrir le reste des fonctionnalitées par vous même 😊
        
  ### Conclusion
  
