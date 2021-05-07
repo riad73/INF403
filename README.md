@@ -171,4 +171,6 @@ A partir du menu d'authentification (après l'éxecution de la commande [c] se c
     ![image](https://user-images.githubusercontent.com/58702474/117145051-f91ad000-adb2-11eb-9c30-803b15fc7fa6.png)
     <br/>
      <br/>
+     
+    Je vous laisse découvrir le reste par vous même 😊
        
