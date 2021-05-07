@@ -103,7 +103,9 @@ StatutCommande ∈ {expidée, transit, livrée} <br/>
 Disponible ∈ {TRUE, FALSE} <br/>
 <br/>
 
-> Vous pouvez aussi acceder au [jeux de test ok ](https://github.com/riad73/INF403/blob/main/jeu_donnees_ok.sql)
+> Vous pouvez aussi accéder au [jeu de test ok ](https://github.com/riad73/INF403/blob/main/jeu_donnees_ok.sql)
+> Vous pouvez accéder au [jeu de test échouché](https://github.com/riad73/INF403/blob/main/table_donnee_failed.sql)
+> Ou encore, accéder à la [création de table](https://github.com/riad73/INF403/blob/main/table_projet.sql)
 
 ### Partie 3: Réalisation d'une application Python. <br/>
 
@@ -165,6 +167,8 @@ A partir du menu d'authentification (après l'éxecution de la commande [c] se c
     <br/>
      <br/>
      
+    > Pour clarifier mon code pour moi mais aussi pour les autres j'ai créer différentes classes objets appelé model dans le dossier utils tels que Client ou encore Article. Cela me permet donc de créer des listes de clients sans avoir gérer des sous listes. De plus l'utilisation de ces modeles sont simples (_Par exemple on stock tout le contenu des row dans une variable  mon_article: Article = Article(row[0], row[1]...) et ensuite on peut effectuer des trucs tout simple tels que mon_article.disponible ou encore mon_article.reference_article.
+    
     Je vous laisse découvrir le reste des fonctionnalitées par vous même 😊
        
  ### Conclusion
