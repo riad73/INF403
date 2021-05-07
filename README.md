@@ -29,9 +29,9 @@ Voici les notions que le client souhaite que l'on mette en oeuvre:
 
 **Les clients :** Les clients sont identifiés par un numéro unique, on représente aussi leur nom, prénom, adresse et date de naissance.
 
-**Les articles :** Les articles seront identifiable par un numéro qui correspond à la référence de l'article. De plus, les articles présent sur l'application auront un nom, une marque ainsi qu'un prix. Ces articles seront stockés dans l'entrepot de la boutique en ligne. Cet entrepot possède des allées correspondant à un caractère du type : "A", "B"... et sont positionnés à des endroits étiquettés par un numéro. Pour faciliter la gestion des articles les vendeurs souhaitent pouvoir gerer le stock, de même il souhaite pouvoir indiquer si un articile est disponible ou non.
+**Les articles :** Les articles seront identifiable par un numéro qui correspond à la référence de l'article. De plus, les articles présent sur l'application auront un nomainsi qu'un prix. Ces articles seront stockés dans l'entrepot de la boutique en ligne a une adresse donnée. Cet entrepot possède des allées correspondant à un caractère du type : "A", "B"..."G" et sont positionnés à des endroits étiquettés par un numéro. Pour faciliter la gestion des articles les vendeurs souhaitent pouvoir gerer le stock, de même il souhaite pouvoir indiquer si un articile est disponible ou non.
 
-**Les commandes**: Les commandes quant à elle sont identifiable par un numéro de commande et comportera, le nom du client, son adresse de livraison, la référence de l'article commandé, la date d'achat ainsi que le statut de la commande (expédié, en transit ou livré). De plus, toutes les commandes effectuées seront stockées dans le panier des clients.
+**Les commandes**: Les commandes quant à elle sont identifiable par un numéro de commande et comportera, le nom du client, son adresse de livraison, la référence de l'article commandé, la date d'achat ainsi que le statut de la commande (expédié, en transit ou livré). De plus, toutes les commandes effectuées seront stockées dans le panier des clients et le nombre d'articles dans le panier correspondera à la quantité d'article dans la commande (_Par exemple Martine a commandé 3 articles dans sa commande n°1_).
 
 
 *Conception de notre diagramme UML* <br/>
