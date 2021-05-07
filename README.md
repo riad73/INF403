@@ -104,8 +104,8 @@ Disponible ∈ {TRUE, FALSE} <br/>
 <br/>
 
 > Vous pouvez aussi accéder au [jeu de test ok ](https://github.com/riad73/INF403/blob/main/jeu_donnees_ok.sql)
-> Vous pouvez accéder au [jeu de test échouché](https://github.com/riad73/INF403/blob/main/table_donnee_failed.sql)
-> Ou encore, accéder à la [création de table](https://github.com/riad73/INF403/blob/main/table_projet.sql)
+>  mais aussi  au [jeu de test échouché](https://github.com/riad73/INF403/blob/main/table_donnee_failed.sql)
+> ou encore à la [création de table](https://github.com/riad73/INF403/blob/main/table_projet.sql)
 
 ### Partie 3: Réalisation d'une application Python. <br/>
 
