@@ -103,6 +103,8 @@ StatutCommande ∈ {expidée, transit, livrée} <br/>
 Disponible ∈ {TRUE, FALSE} <br/>
 <br/>
 
+> Vous pouvez aussi acceder au [jeux de test ok ](https://github.com/riad73/INF403/blob/main/jeu_donnees_ok.sql)
+
 ### Partie 3: Réalisation d'une application Python. <br/>
 
 #### Connexion </br>
