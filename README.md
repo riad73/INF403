@@ -14,7 +14,7 @@
   - [x] Partie III
   - [x] FINI 🥳
 
-> **Informations:** Dans le dossier principale INF403, on a les documents relatifs à la partie 1 & 2. La partie 3 est disponible
+> 📌**Informations:** Dans le dossier principale INF403, on a les documents relatifs à la partie 1 & 2. La partie 3 est disponible
 > dans le dossier [INF403/python-app](https://github.com/riad73/INF403/tree/main/python-app) et contient un fichier [.rar](https://github.com/riad73/INF403/blob/main/python-app/App.rar) de tout les fichiers pythons.
 
 
@@ -169,7 +169,7 @@ A partir du menu d'authentification (après l'éxecution de la commande [c] se c
     <br/>
      <br/>
      
-    >  **Astuce:** Pour clarifier mon code pour moi mais aussi pour les autres j'ai créer différentes classes objets appelé model dans le dossier utils tels que Client ou encore Article. Cela me permet donc de créer des listes de clients sans avoir gérer des sous listes. De plus l'utilisation de ces modeles sont simples (_Par exemple on stock tout le contenu des row dans une variable  mon_article: Article = Article(row[0], row[1]...) et ensuite on peut effectuer des trucs tout simple tels que mon_article.disponible ou encore mon_article.reference_article_.
+    > 💡 **Astuce:** Pour clarifier mon code pour moi mais aussi pour les autres j'ai créer différentes classes objets appelé model dans le dossier utils tels que Client ou encore Article. Cela me permet donc de créer des listes de clients sans avoir gérer des sous listes. De plus l'utilisation de ces modeles sont simples (_Par exemple on stock tout le contenu des row dans une variable  mon_article: Article = Article(row[0], row[1]...) et ensuite on peut effectuer des trucs tout simple tels que mon_article.disponible ou encore mon_article.reference_article_.
     
     Je vous laisse découvrir le reste des fonctionnalitées par vous même 😊
        
