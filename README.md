@@ -41,7 +41,6 @@ Grâce aux informations ci-dessus nous pouvons traduire les demandes du client p
 
 
 ### Partie 2: Traduction du modèle UML au relationnel. <br/>
-<br/>
 
 #### Règles de traductions</br>
 
@@ -49,8 +48,6 @@ Nom classe singulier → Nom table pluriel </br>
 CamelCase → Snake_case </br>
 attribut → attribut_nomclasse </br>
 /attribut  → view </br>
-</br>
-
 
 #### Modèle relationnel</br>
 A partir du diagramme UML nous allons déduire ci-dessous le modèle relationnel.<br/>
@@ -82,16 +79,13 @@ Pour designer une clé primaire nous utiliserons une typographie bold et italiqu
 **Entrepot**(**_allée, position_**, adresse_entrepot) <br/>
   /* <m, o, ad> ∈ Entrepot ⇐⇒ les articles sont stockés dans un entrepot et sont indentifiable par une allée m, une position o et une adresse ad */<br/>
 <br/>
-<br/>
-
 
 #### Les domaines</br>
 Les domaines sont:<br/>
 domaine(numero_client)=domaine(numero_commande)=domaine(place)=domaine(reference_article)=domaine(prix)=domaine(stock)=domaine(quantite) = entier > 0 <br/>
 domaine(nom)=domaine(prenom)=domaine(adresse)=domaine(adresse_livraison)=domaine(statut)=domaine(nom_article) = domaine(allee) = domaine(adresse_entrepot)=domaine(disponible) = chaine de caractère <br/>
 domaine(date_achat) = date <br/>
-<br/>
-<br/>
+
 
 #### Les contraintes d'intégrités</br>
 
@@ -110,8 +104,6 @@ StatutCommande ∈ {expidée, transit, livrée} <br/>
 Disponible ∈ {TRUE, FALSE} <br/>
 
 <br/>
-<br/>
-
 ### Partie 3: Réalisation d'une application Python. <br/>
 
 #### Connexion </br>
