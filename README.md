@@ -102,8 +102,8 @@ Articles[nom_article] = TypeArticles[nom_article]<br/>
 StatutCommande ∈ {expidée, transit, livrée} <br/>
 
 Disponible ∈ {TRUE, FALSE} <br/>
-
 <br/>
+
 ### Partie 3: Réalisation d'une application Python. <br/>
 
 #### Connexion </br>
