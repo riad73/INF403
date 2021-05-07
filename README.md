@@ -174,3 +174,7 @@ A partir du menu d'authentification (après l'éxecution de la commande [c] se c
      
     Je vous laisse découvrir le reste par vous même 😊
        
+ ### Conclusion
+ 
+  Ce projet a été très enrichissant car la base de donnée est une notion importante dans le métier de développeur aussi bien web que mobile. Je trouve que se projet m'a permit d'acquérir des connaissances solides qui je suis sur me seront utiles demain.
+     
