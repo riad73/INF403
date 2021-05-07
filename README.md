@@ -13,6 +13,13 @@
   - [x] Partie II 
   - [x] Partie III
 
+```
+Informations: Dans le dossier principale INF403, on a les document relatifs à la partie 1 & 2. La partie 3 est disponible dans le dossier INF403/python-app et contient un fichier .rar de tout les fichiers pythons.
+
+```
+
+
+
 ### Partie 1: Description du problème & modèle conceptuel.
 
 Dans ce projet, nous souhaitons créer la base de donnée d'une boutique en ligne pour un client.
